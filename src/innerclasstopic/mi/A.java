@@ -5,7 +5,6 @@ public class A
 {
 	// private property of Outer Class
 	private int value = 100;
-	
 	class B
 	{
 		void msg() 
