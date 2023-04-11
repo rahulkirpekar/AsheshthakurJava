@@ -14,21 +14,28 @@ public class TestApp1
 		Student s5 = new Student(5, "suresh", 7);
 		
 		ArrayList<Student> list = new ArrayList<Student>();
-		
 		list.add(s1);
 		list.add(s2);
 		list.add(s3);
 		list.add(s4);
 		list.add(s5);
-
 		for (int i = 0; i < list.size(); i++) 
 		{
 			Student s = list.get(i);
 			s.disp();
 		}
+		System.out.println("Stdwise Comparator : ");
 		
-		Collections.sort(list);//C.E
+		Collections.sort(list, new StdWiseStudentComparator());
 		
+		System.out.println("After Sorting : ");
+		for (int i = 0; i < list.size(); i++) 
+		{
+			Student s = list.get(i);
+			s.disp();
+		}
+		System.out.println("Namewise Comparator : ");
+		Collections.sort(list, new NameWiseStudentComparator());
 		System.out.println("After Sorting : ");
 		for (int i = 0; i < list.size(); i++) 
 		{
