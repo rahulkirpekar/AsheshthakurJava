@@ -12,9 +12,6 @@ public class TestApp1
 				System.out.println("Cat -- eat() -- " + this);
 			}
 		};
-		//innerclasstopic.ai.TestApp1$1@2c7b84de
-
 		animal.eat();
-		
 	}
 }
